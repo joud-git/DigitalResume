@@ -1,1 +1,1 @@
-# DigitalResume
+# DigitalResume od a software engineering studet presented as an assignment in web development submitted by Joud Mozahem 

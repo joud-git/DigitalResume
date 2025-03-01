@@ -3,8 +3,9 @@
 
 <head>
     <meta charset='utf-8'>
-    <title>DigitalResume</title>
+    <title>Projects - Joud's Portfolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
@@ -39,39 +40,53 @@
         </div>
     </nav>
 
+
     <header>
-        <h1>Joud Mozahem's Digital Journey</h1>
+        <h1>My Projects</h1>
     </header>
 
-    <main>
 
-        <div class="imgtextcont">
-            <div class="myimage">
-                <img src="Assets/myimagecir.png" alt="Joud's picture" width="250" height="400">
+    <div class="container my-5">
+        <div class="row g-4">
 
+
+            <div class="col-md-6">
+                <div class="project-card">
+                    <a href="#" target="_blank">
+                        <img src="Assets/barakah.jpeg" alt="Barkah Project">
+                    </a>
+                    <div class="project-info">
+                        <h2>Barkah</h2>
+                        <p>IoT project that detects and sends alerts for expired products by scanning barcodes.<br>
+                            Uses RFID tags to store expiration dates and a reader to monitor them.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="maintextcontent">
-                <h3>Objective</h3>
-                <p>Motivated software engineering student with a strong foundation in Software development,<br> UI/UX
-                    design,
-                    and
-                    agile methodologies. Committed to continuously developing my programming and analytical skills.<br>
-                    Passionate
-                    about solving problems and building solutions that contribute to our community.</p>
+
+            <div class="col-md-6">
+                <div class="project-card">
+                    <a href="#" target="_blank">
+                        <img src="Assets/kidcoin.jpg" alt="KidCoin Project">
+                    </a>
+                    <div class="project-info">
+                        <h2>KidCoin</h2>
+                        <p>Flutter-based app using Firebase to help kids learn essential financial skills.<br>
+                            Implemented Agile methodology with JIRA for efficient project delivery.</p>
+                    </div>
+                </div>
             </div>
-        </div>
 
-    </main>
-
-    <footer>
-        <div class="foot">
-            <p>Let’s Connect! </p>
-            <p>Follow me for exciting updates and collaborations.</p>
-            <a href="https://www.linkedin.com/in/joud-mozahem-90929a24b" target="_blank">
-                <img src="Assets/linkedin.png" alt="LinkedIn Profile" width="40" height="40">
-            </a>
         </div>
+    </div>
+
+
+    <footer class="foot">
+        <p>Let’s Connect!</p>
+        <p>Follow me for exciting updates and collaborations.</p>
+        <a href="https://www.linkedin.com/in/joud-mozahem-90929a24b" target="_blank">
+            <img src="Assets/linkedin.png" alt="LinkedIn Profile" width="40" height="40">
+        </a>
     </footer>
 
 

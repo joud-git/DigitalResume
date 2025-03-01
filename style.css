@@ -1,49 +1,104 @@
-@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
-
 body {
-    background: url('background.png') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+    background-image: url('Assets/background2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
 }
 
-main {
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+
+header,
+.foot {
+    text-align: center;
+    background: transparent;
+    padding: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #a9a9a9;
+}
+
+
+.content-container {
+    background: rgba(107, 142, 35, 0.1);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #a9a9a9;
+    text-align: center;
+}
+
+h2 {
+    color: #6B8E23;
+    text-align: center;
+}
+
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(107, 142, 35, 0.1);
+    border: 1px;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #556B2F;
+    text-align: center;
+    color: #fff;
+}
+
+th {
+    background: rgba(51, 60, 30, 0.3);
+    font-size: 20px;
+}
+
+
+.navbar {
+    background: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(5px);
+}
+
+.navbar-nav .nav-link,
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+
+.main-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
     padding: 20px;
 }
-
-
-header,
-.foot {
-    background-color: transparent;
-    text-align: center;
-    padding: 20px;
-}
-
-.navbar {
-    background: rgba(0, 0, 0, 0.5) !important;
-
-    backdrop-filter: blur(5px);
-
-}
-
-.navbar-nav .nav-link {
-    color: white !important;
-}
-
-.navbar-brand {
-    color: white !important;
-    font-weight: bold;
-}
-
 
 .maintextcontent {
     display: flex;
@@ -67,11 +122,130 @@ header,
 
 }
 
+
 .foot a {
     display: inline-block;
     margin-top: 10px;
 }
 
-.foot {
-    background: transparent !important;
+
+
+
+
+.project-card {
+    background: rgba(107, 142, 35, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+
+    max-width: 250px;
+
+    height: auto;
+
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h2 {
+    color: #6B8E23;
+}
+
+.project-info p {
+    font-size: 16px;
+}
+
+
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    gap: 15px;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+    border-radius: 10px;
+
+}
+
+
+.socialContainer {
+    width: 50px;
+
+    height: 50px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 12px;
+
+}
+
+
+.containerOne:hover {
+    background-color: #4CAF50;
+}
+
+.containerTwo:hover {
+    background-color: #007bff;
+}
+
+.containerThree:hover {
+    background-color: #0072b1;
+}
+
+.containerFour:hover {
+    background-color: #ff6347;
+}
+
+.socialContainer:active {
+    transform: scale(0.95);
+}
+
+
+.socialSvg {
+    width: 20px;
+    transition: transform 0.3s ease;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.8s both;
+
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

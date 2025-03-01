@@ -1,1 +1,1 @@
-# DigitalResume od a software engineering studet presented as an assignment in web development submitted by Joud Mozahem 
+# DigitalResume of a software engineering student using html css and bootstrap created by Joud Mozahem 
